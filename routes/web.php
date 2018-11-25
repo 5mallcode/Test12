@@ -23,3 +23,7 @@ Route::get('/teacher/view-all', 'TeacherController@index');
 Route::get('/teacher/create' , 'TeacherController@create');
 Route::get('/teacher/edit' , 'TeacherController@edit');
 Route::get('/teacher/profile' , 'TeacherController@profile');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
